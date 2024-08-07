@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class="transaksi">
+        <form action="invoice.html" method="POST">
+            <h3 class="title">Formulir Pembayaran</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="inputBox">
+                        <span>Nama Lengkap :</span>
+                        <input type="text" id="nama" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>No WhatsApp :</span>
+                        <input type="number" id="nomer" required maxlength="13">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Tanggal Pembelian :</span>
+                        <input type="date" id="tanggal" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Alamat Lengkap :</span>
+                        <input type="text" id="alamat" required>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="inputBox">
+                        <span>Jenis Barang :</span>
+                        <select id="merk" required>
+                            <option selected="">Pilih Barang</option>
+                            <option value="Iphone 15 Pro Max">Iphone 15 Pro Max</option>
+                            <option value="Iphone 14 Pro">Iphone 14 Pro</option>
+                            <option value="Vivo X Flip">Vivo X Flip</option>
+                            <option value="Samsung S19 Ultra">Samsung S19 Ultra</option>
+                            <option value="Samsung S21 Ultra">Samsung S21 Ultra</option>
+                            <option value="Infinix HotPlay 5">Infinix HotPlay 5</option>
+                            <option value="Vivo A55">Vivo A55</option>
+                            <option value="Infinix Note 40 Pro">Infinix Note 40 Pro</option>
+                            <option value="Vivo A50">Vivo A50</option>
+                            <option value="Oppo Y25">Oppo Y25</option>
+                            <option value="Smart Watch">Smart Watch</option>
+                            <option value="PowerBank Robot">PowerBank Robot</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Jumlah Pembelian :</span>
+                        <input type="text" id="jumlahbeli" value="1" readonly>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Metode Pembayaran :</span>
+                        <select name="produk" id="metode" required>
+                            <option selected="">Pilih Pembayaran</option>
+                            <option value="Transfer Bank">Transfer Bank</option>
+                            <option value="Paypal">Paypal</option>
+                            <option value="Datang Ke Toko">Datang Ke Toko</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Nomer Rekening :</span>
+                        <input type="number" id="rekening" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Harga :</span>
+                        <input type="text" id="harga" required>
+                    </div>
+                </div>
+
+            </div>
+            <input type="button" value="Kembali" class="submit-btn1" onclick="history.back()">
+            <input type="submit" value="Bayar" class="submit-btn2" onclick="handleSubmit()">
+        </form>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
